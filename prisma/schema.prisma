@@ -17,4 +17,11 @@ datasource db {
 model Product {
   id String @id @default(cuid())
   name String
+  brand String
+  price Float
+  imageUrl String
+  url String
+  merchant String
+  tags String[]
+  createdAt DateTime @default(now())
 }
