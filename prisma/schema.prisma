@@ -23,4 +23,5 @@ model Product {
   url String
   merchant String
   tags String[]
+  createdAt DateTime @default(now())
 }
